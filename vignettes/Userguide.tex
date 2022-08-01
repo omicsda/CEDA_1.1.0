@@ -1,0 +1,377 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={CRISPR Screen and Gene Expression Differential Analysis},
+  pdfauthor={Lianbo Yu, Yue Zhao, Kevin R. Coombes, and Lang Li},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{CRISPR Screen and Gene Expression Differential Analysis}
+\author{Lianbo Yu, Yue Zhao, Kevin R. Coombes, and Lang Li}
+\date{2022-07-27}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+We developed CEDA to analyze read counts of single guide RNAs (sgRNAs)
+raw CRISPR screening experiments. The sgRNAs are synthetically generated
+from genes, and each gene can generate multiple sgRNAs. CEDA models the
+sgRNA counts at different levels of gene expression by multi-component
+normal mixtures, with the model fit by an EM algorithm. Posterior
+estimates at sgRNA level are then summarized for each gene.
+
+In this document, we use data from an experiment with the MDA231 cell
+line to illustrate how to use CEDA to perform CRISPR screen data
+analysis.
+
+\hypertarget{overview}{%
+\section{Overview}\label{overview}}
+
+CEDA analysis follows a workflow that is typical for most omics level
+experiments.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Put the data into an appropriate format for input to CEDA.
+\item
+  Normalize the raw counts.
+\item
+  Fit a linear model to the data.
+\item
+  Summarize and view the results.
+\end{enumerate}
+
+\hypertarget{data-format}{%
+\subsection{Data Format}\label{data-format}}
+
+In our experiment, three samples of MDA231 cells were untreated at time
+T=0, and another three samples of MDA231 cells were treated with DMSO at
+time T=0. We are interested in detecting sgRNAs that are differentially
+changed by a treatment.
+
+The sgRNA read counts, along with a list of non-essential genes, are
+stored in the dataset \texttt{mda231} that we have included in the
+\texttt{CEDA} package. We read that dataset and explore its structure.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(CEDA)}
+\FunctionTok{data}\NormalTok{(}\StringTok{"mda231"}\NormalTok{)}
+\FunctionTok{class}\NormalTok{(mda231)}
+\CommentTok{\#\textgreater{} [1] "list"}
+\FunctionTok{length}\NormalTok{(mda231)}
+\CommentTok{\#\textgreater{} [1] 2}
+\FunctionTok{names}\NormalTok{(mda231)}
+\CommentTok{\#\textgreater{} [1] "sgRNA"  "neGene"}
+\end{Highlighting}
+\end{Shaded}
+
+As you can see, this is a list containing two components
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \texttt{sgRNA}, the observed count data of six samples, and
+\item
+  \texttt{neGene}, the set of non-essential genes.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{dim}\NormalTok{(mda231}\SpecialCharTok{$}\NormalTok{sgRNA)}
+\CommentTok{\#\textgreater{} [1] 23618     9}
+\FunctionTok{length}\NormalTok{(mda231}\SpecialCharTok{$}\NormalTok{neGene}\SpecialCharTok{$}\NormalTok{Gene)}
+\CommentTok{\#\textgreater{} [1] 200}
+\FunctionTok{head}\NormalTok{(mda231}\SpecialCharTok{$}\NormalTok{sgRNA)}
+\CommentTok{\#\textgreater{}                                   sgRNA  Gene DMSOa DMSOb DMSOc T0a T0b T0c}
+\CommentTok{\#\textgreater{} 64780   chr19:10655652{-}10655671\_ATG4D\_{-} ATG4D   126   100   132  94  82  78}
+\CommentTok{\#\textgreater{} 67381     chr5:32739109{-}32739128\_NPR3\_+  NPR3   266   452   309 557 687 587}
+\CommentTok{\#\textgreater{} 67411    chr3:45515731{-}45515750\_LARS2\_+ LARS2    28    45    36 583 660 512}
+\CommentTok{\#\textgreater{} 27053 chr12:111856039{-}111856058\_SH2B3\_+ SH2B3   509   501   661 578 824 636}
+\CommentTok{\#\textgreater{} 55806   chr9:118163517{-}118163536\_DEC1\_+  DEC1   265   489   390 718 733 655}
+\CommentTok{\#\textgreater{} 57274   chr1:228879268{-}228879287\_RHOU\_+  RHOU   144   124   137 160 164 119}
+\CommentTok{\#\textgreater{}       exp.level.log2}
+\CommentTok{\#\textgreater{} 64780    3.655866985}
+\CommentTok{\#\textgreater{} 67381    0.200236907}
+\CommentTok{\#\textgreater{} 67411    3.495375381}
+\CommentTok{\#\textgreater{} 27053    4.227348316}
+\CommentTok{\#\textgreater{} 55806    0.005794761}
+\CommentTok{\#\textgreater{} 57274    0.925993344}
+\end{Highlighting}
+\end{Shaded}
+
+Notice that the \texttt{sgRNA} component includes an extra column,
+``\texttt{exp.level.log2}'', that are the expression level (in log2
+scale) of genes and was computed from raw gene expression data.
+
+The second element of the list \texttt{neGene} is, as expected, just a
+list of gene names that are the non-essential genes:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{dim}\NormalTok{(mda231}\SpecialCharTok{$}\NormalTok{neGene)}
+\CommentTok{\#\textgreater{} [1] 200   1}
+\FunctionTok{head}\NormalTok{(mda231}\SpecialCharTok{$}\NormalTok{neGene)}
+\CommentTok{\#\textgreater{}        Gene}
+\CommentTok{\#\textgreater{} 189    MMD2}
+\CommentTok{\#\textgreater{} 303    SUN5}
+\CommentTok{\#\textgreater{} 155    KRT2}
+\CommentTok{\#\textgreater{} 72    DEFA5}
+\CommentTok{\#\textgreater{} 195   MUC17}
+\CommentTok{\#\textgreater{} 70  CYP2C19}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{normalization}{%
+\subsection{Normalization}\label{normalization}}
+
+The sgRNA read counts needs to be normalized across sample replicates
+before formal analysis. The non-essential genes are assumed to have no
+change after DMSO treatment. So, our recommended procedure is to perform
+median normalization based on the set of non-essential genes.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mda231.ne }\OtherTok{\textless{}{-}}\NormalTok{ mda231}\SpecialCharTok{$}\NormalTok{sgRNA[mda231}\SpecialCharTok{$}\NormalTok{sgRNA}\SpecialCharTok{$}\NormalTok{Gene }\SpecialCharTok{\%in\%}\NormalTok{ mda231}\SpecialCharTok{$}\NormalTok{neGene}\SpecialCharTok{$}\NormalTok{Gene,]}
+\NormalTok{cols }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\DecValTok{3}\SpecialCharTok{:}\DecValTok{8}\NormalTok{)}
+\NormalTok{mda231.norm }\OtherTok{\textless{}{-}} \FunctionTok{medianNormalization}\NormalTok{(mda231}\SpecialCharTok{$}\NormalTok{sgRNA[,cols], mda231.ne[,cols])[[}\DecValTok{2}\NormalTok{]]}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{analysis}{%
+\subsection{Analysis}\label{analysis}}
+
+Our primary goal is to detect essential sgRNAs that have different count
+levels between conditions. We rely on the R package \texttt{limma} to
+calculate log fold ratios between three untreated and three treated
+samples.
+
+\hypertarget{calculating-fold-ratios}{%
+\subsubsection{Calculating fold ratios}\label{calculating-fold-ratios}}
+
+First, we have to go through the usual \texttt{limma} steps to describe
+the design of the study. There were two groups of replicate samples. We
+will call these groups ``Control'' and ``Baseline'' (although
+``Treated'' and Untreated'' would work just as well). Our main interest
+is determining the differences between the groups. And we have to record
+this information in a ``contrast matrix'' so limma knows what we want to
+compare.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{group }\OtherTok{\textless{}{-}} \FunctionTok{gl}\NormalTok{(}\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{, }\AttributeTok{labels=}\FunctionTok{c}\NormalTok{(}\StringTok{"Control"}\NormalTok{,}\StringTok{"Baseline"}\NormalTok{))}
+\NormalTok{design }\OtherTok{\textless{}{-}} \FunctionTok{model.matrix}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}  \DecValTok{0} \SpecialCharTok{+}\NormalTok{ group)}
+\FunctionTok{colnames}\NormalTok{(design) }\OtherTok{\textless{}{-}} \FunctionTok{sapply}\NormalTok{(}\FunctionTok{colnames}\NormalTok{(design), }\ControlFlowTok{function}\NormalTok{(x) }\FunctionTok{substr}\NormalTok{(x, }\DecValTok{6}\NormalTok{, }\FunctionTok{nchar}\NormalTok{(x)))}
+\NormalTok{contrast.matrix }\OtherTok{\textless{}{-}} \FunctionTok{makeContrasts}\NormalTok{(}\StringTok{"Control{-}Baseline"}\NormalTok{, }\AttributeTok{levels=}\NormalTok{design)}
+\end{Highlighting}
+\end{Shaded}
+
+Finally, we can run the lmima algorithm.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{limma.fit }\OtherTok{\textless{}{-}} \FunctionTok{runLimma}\NormalTok{(}\FunctionTok{log2}\NormalTok{(mda231.norm}\SpecialCharTok{+}\DecValTok{1}\NormalTok{),design,contrast.matrix)}
+\end{Highlighting}
+\end{Shaded}
+
+We merge the results from our limma analysis with the original sgRNA
+count data.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mda231.limma }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(mda231}\SpecialCharTok{$}\NormalTok{sgRNA, limma.fit)}
+\FunctionTok{head}\NormalTok{(mda231.limma)}
+\CommentTok{\#\textgreater{}                                   sgRNA  Gene DMSOa DMSOb DMSOc T0a T0b T0c}
+\CommentTok{\#\textgreater{} 64780   chr19:10655652{-}10655671\_ATG4D\_{-} ATG4D   126   100   132  94  82  78}
+\CommentTok{\#\textgreater{} 67381     chr5:32739109{-}32739128\_NPR3\_+  NPR3   266   452   309 557 687 587}
+\CommentTok{\#\textgreater{} 67411    chr3:45515731{-}45515750\_LARS2\_+ LARS2    28    45    36 583 660 512}
+\CommentTok{\#\textgreater{} 27053 chr12:111856039{-}111856058\_SH2B3\_+ SH2B3   509   501   661 578 824 636}
+\CommentTok{\#\textgreater{} 55806   chr9:118163517{-}118163536\_DEC1\_+  DEC1   265   489   390 718 733 655}
+\CommentTok{\#\textgreater{} 57274   chr1:228879268{-}228879287\_RHOU\_+  RHOU   144   124   137 160 164 119}
+\CommentTok{\#\textgreater{}       exp.level.log2         lfc        se            p}
+\CommentTok{\#\textgreater{} 64780    3.655866985  0.52954908 0.1093812 6.287987e{-}03}
+\CommentTok{\#\textgreater{} 67381    0.200236907 {-}0.81763714 0.3240186 2.269143e{-}02}
+\CommentTok{\#\textgreater{} 67411    3.495375381 {-}3.94431072 0.2746740 1.624301e{-}06}
+\CommentTok{\#\textgreater{} 27053    4.227348316 {-}0.23583315 0.1257939 1.437600e{-}01}
+\CommentTok{\#\textgreater{} 55806    0.005794761 {-}0.87573339 0.3301200 1.830149e{-}02}
+\CommentTok{\#\textgreater{} 57274    0.925993344 {-}0.07125132 0.1276733 6.343237e{-}01}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{fold-ratios-under-the-null-hypotheses}{%
+\subsubsection{Fold ratios under the null
+hypotheses}\label{fold-ratios-under-the-null-hypotheses}}
+
+Under the null hypothses, all sgRNAs levels are unchanged between the
+two conditions. To obtain fold ratios under the null, samples were
+permuted between two conditions, and log fold ratios were obtained from
+limma analysis under each permutation.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{betanull }\OtherTok{\textless{}{-}} \FunctionTok{permuteLimma}\NormalTok{(}\FunctionTok{log2}\NormalTok{(mda231.norm }\SpecialCharTok{+} \DecValTok{1}\NormalTok{), design, contrast.matrix, }\DecValTok{20}\NormalTok{)}
+\NormalTok{theta0 }\OtherTok{\textless{}{-}} \FunctionTok{sd}\NormalTok{(betanull)}
+\NormalTok{theta0}
+\CommentTok{\#\textgreater{} [1] 0.4601033}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{fitting-three-component-mixture-models}{%
+\subsubsection{Fitting three-component mixture
+models}\label{fitting-three-component-mixture-models}}
+
+A three-component mixture model (unchanged, overexpresssed, and
+underexpressed) is assumed for log fold ratios at different level of
+gene expression. Empirical Bayes method was employed to estimate
+parematers of the mixtures and posterior means were obtained for
+estimating actual log fold ratios between the two conditions. P-values
+of sgRNAs were then calculated by permutation method.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{nmm.fit }\OtherTok{\textless{}{-}} \FunctionTok{normalMM}\NormalTok{(mda231.limma, theta0)}
+\end{Highlighting}
+\end{Shaded}
+
+Results from the mixture model were shown in Figure \(1\). False
+discovery rate of \(0.05\) was used for declaring significant changes in
+red color between the two conditions for sgRNAs.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{scatterPlot}\NormalTok{(nmm.fit}\SpecialCharTok{$}\NormalTok{data,}\AttributeTok{fdr=}\FloatTok{0.05}\NormalTok{,}\AttributeTok{xlim=}\FunctionTok{c}\NormalTok{(}\SpecialCharTok{{-}}\FloatTok{0.5}\NormalTok{,}\DecValTok{12}\NormalTok{),}\AttributeTok{ylim=}\FunctionTok{c}\NormalTok{(}\SpecialCharTok{{-}}\DecValTok{8}\NormalTok{,}\DecValTok{5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+\centering
+\includegraphics{P:/project/Research/CRISPR/CRAN/CEDA/vignettes/Userguide_files/figure-latex/fig1-1.pdf}
+\caption{Log fold ratios of sgRNAs vs.~gene expression level}
+\end{figure}
+
+\hypertarget{gene-level-summarization}{%
+\subsubsection{Gene level
+summarization}\label{gene-level-summarization}}
+
+From the p-values of sgRNAs, gene level p-values were obtained by using
+modified robust rank aggregation method (alpha-RRA). Log fold ratios
+were also summarized at gene level.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mda231.nmm }\OtherTok{\textless{}{-}}\NormalTok{ nmm.fit[[}\DecValTok{1}\NormalTok{]]}
+\NormalTok{p.gene }\OtherTok{\textless{}{-}} \FunctionTok{calculateGenePval}\NormalTok{(}\FunctionTok{exp}\NormalTok{(mda231.nmm}\SpecialCharTok{$}\NormalTok{log\_p), mda231.nmm}\SpecialCharTok{$}\NormalTok{Gene, }\FloatTok{0.05}\NormalTok{)}
+\NormalTok{fdr.gene }\OtherTok{\textless{}{-}}\NormalTok{ stats}\SpecialCharTok{::}\FunctionTok{p.adjust}\NormalTok{(p.gene}\SpecialCharTok{$}\NormalTok{pvalue, }\AttributeTok{method =} \StringTok{"fdr"}\NormalTok{)}
+\NormalTok{lfc.gene }\OtherTok{\textless{}{-}} \FunctionTok{calculateGeneLFC}\NormalTok{(mda231.nmm}\SpecialCharTok{$}\NormalTok{lfc, mda231.nmm}\SpecialCharTok{$}\NormalTok{Gene)}
+\end{Highlighting}
+\end{Shaded}
+
+
+\end{document}
