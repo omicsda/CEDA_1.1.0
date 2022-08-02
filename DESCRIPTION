@@ -4,7 +4,9 @@ Title: CRISPR Screen and Gene Expression Differential Analysis
 Version: 1.1.0
 Authors@R: c(person("Lianbo","Yu",role=c("aut","cre"),
             email="Lianbo.Yu@osumc.edu"),
-            person(c("Kevin","R."),"Coombes",role="aut"))
+            person("Yue","Zhao",role="aut"),
+            person(c("Kevin","R."),"Coombes",role="aut"),
+            person("Lang","Li",role="aut"))
 Description: Provides analytical methods for analyzing CRISPR screen data
     at different levels of gene expression. Multi-component normal mixture models
     and EM algorithms are used for modeling.
